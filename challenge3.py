@@ -10,9 +10,20 @@
 # * Bonus: What month and day is it 73 days after October 31st 2018?
 
 
+# NEED TO PRACTICE - I did not get how to solve - combined forces with Myles and got it
 
 
+def day_of_the_week(today,num):
+    weekdays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+    index = int(weekdays.index(today))
+    print(index)
+    days = num % 7
+    print(days)
+    print(days + index)
+    index2 = (index + days) % 7 # the remainder function is giving everything that's left over that hasn't been divided evenly
+    print(index2)
+    return weekdays[index2]
 
+print(day_of_the_week("saturday", 16))
 
-
-
+6 % 7

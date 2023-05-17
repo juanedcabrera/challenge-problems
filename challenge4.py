@@ -9,6 +9,10 @@
 # reverse('hello') === 'olleh'
 # reverse('Greetings!') === '!sgniteerG'
 
-# Solution 1
+
 def reversed_string(string):
     return reversed_string[::-1]
+
+print(reversed_string("apple"))
+print(reversed_string("hello"))
+print(reversed_string("Greetings!"))

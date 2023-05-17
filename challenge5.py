@@ -11,7 +11,7 @@
 # palindrome("abcdefg") === false
 # ```
 
-# Solution 1
+
 def palindrome(string):
     return string == string[::-1]
 

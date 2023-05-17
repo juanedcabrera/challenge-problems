@@ -10,12 +10,15 @@
 # ```
 
 def greedy(num):
-    coins = {'quarter':25,'dime':10,'nickel':5,'penny':1}
-    count_coins = []
-    for coin in coins:
-        count = num // coin
-        num %= coin
-        count_coins.append(count)
-    return sum(count_coins)
+    coins = {'quarter': 25, 'dime': 10, 'nickel': 5, 'penny': 1}
+    count = []
+
+    for coin, value in coins.items():
+        if num >= value:
+            coin_count = num // value
+            num -= coin_count * value
+            count.append((coin, coin_count))
+
+    return count
 
 print(greedy(65))

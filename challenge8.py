@@ -19,6 +19,6 @@ def greedy(num):
             num -= coin_count * value
             count.append((coin, coin_count))
 
-    return count
+    return len(count)
 
 print(greedy(65))

@@ -10,9 +10,15 @@
 # reverse('Greetings!') === '!sgniteerG'
 
 
-def reversed_string(string):
-    return reversed_string[::-1]
+# def reversed_string(string):
+#     return reversed_string[::-1]
 
-print(reversed_string("apple"))
-print(reversed_string("hello"))
-print(reversed_string("Greetings!"))
+# print(reversed_string("apple"))
+# print(reversed_string("hello"))
+# print(reversed_string("Greetings!"))
+
+def reverse(string):
+    reversestring = ""
+    for i in string:
+        reversestring = i + reversestring
+    return reversestring

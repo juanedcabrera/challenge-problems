@@ -26,4 +26,4 @@ def day_of_the_week(today,num):
 
 print(day_of_the_week("saturday", 16))
 
-6 % 7
+# take the indice and add the total numbe of days to it and then divide by 7 and then take the remainder and that will be the new indice
